@@ -1,0 +1,180 @@
+htnl{
+    font-size: 120%;
+}
+body {
+    font-family: "Crimson Text", "Times New Roman", serif;
+    background-color: #F2FFFC;
+    font-size: 120%;
+	line-height: 1.5;
+}
+
+h1, h2 {
+	font-family: "Open Sans Condensed", "Arial", sans-serif;
+}
+
+.titulo-principal {
+	text-align: center;
+	background-color: #851944;
+	color: #FFF;
+	padding: 1.25rem;/*rem é uma medida baseada no tamanho da font do navegador*/
+	border-bottom: 0.5rem solid black;
+	font-size: 3em;
+	text-transform: uppercase;
+}
+
+p {
+    text-align: justify;
+    margin: 20px 0;
+}
+
+.citacao-bio {
+	background-color: #D9E5E3;
+	border: 0.5em solid #C2CCCA;/*em é uma medida baseada no tamanho da font do elemento*/
+	width: 30ch;/*1ch = largura de um caracter 0 da fonte usada*/
+	box-sizing: border-box;
+    padding: 1em;
+	margin: 1em 2em;
+    font-size: 1em;
+}
+
+.navegacao-site {
+	text-align: center;
+	background-color: #3C1D3D;
+	color: #F2FFFC;
+}
+
+.rodape-pagina {
+	background-color: #000;
+	color: #F2FFFC;
+	clear: both;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+main a {
+	color: #851944;
+}
+
+.navegacao-site a {
+	color: inherit;
+	font-family: "Open Sans Condensed", sans-serif;
+}
+
+.citacao-bio, .navegacao-site, .rodape-pagina {
+    padding: 20px;
+}
+
+.container {
+	width: 720px;
+	margin: auto;
+	padding: 30px 0;
+}
+
+.navegacao-site h1 {
+	font-size: 30px;
+	margin-bottom: 25px;
+}
+
+strong{
+    font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+/*clear:both informa que o elemento não podem ter nenhum float a embaixo dele*/
+.subtitulo-texto {
+	font-size: 30px;
+	clear: both;
+}
+
+/*display permite controlar um comportamento padrao da tag. empilhado ou um do lado do outro*/
+/*inline-block é uma nova propriedade do display inline que permite controlar o height e weight da tag*/
+/*#id-do-elemento*/
+/*.classe-do-elemento*/
+.icones-redes-sociais li {
+	display: inline-block;
+}
+
+.artigo {
+	padding-bottom: 30px;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 20px;
+}
+
+.leia-mais {
+	padding: 8px;
+	margin: 16px;
+	display: block;
+	font-size: 24px;
+	text-align: center;
+	background-color: #E6E7E8;
+}
+
+nav a {
+	text-transform: lowercase;
+}
+
+
+/*Definindo icones atraves do css com a técnica 'image replacement'*/
+/*text-indent empurra o texto para o lado da tela até ele sumir*/
+.icones-redes-sociais a {
+	width: 40px;
+	height: 40px;
+	display: block;
+	text-indent: -99999px;
+}
+
+.github {
+	background-image: url(../img/github.png);
+}
+
+.twitter {
+	background-image: url(../img/twitter.png);
+}
+
+.linkedin {
+	background-image: url(../img/linkedin.png);
+}
+
+.fiat {
+	float: right;
+}
+
+.petrobras {
+	float: left;
+}
+
+main {
+	float: left;
+	width: 85%;
+	padding-bottom: 80px;
+}
+
+/*box-sizing define oque vai ser considerado ao medir o tamanho do elemento. No caso o border-box considerará tbm as bordas do elemento*/
+.minha-foto, .navegacao-site {
+	float: right;
+	box-sizing: border-box;
+	border-left: 10px solid black;
+	border-bottom: 10px solid black;
+}
+
+cite {
+	font-style: italic;
+	float: right;
+}
+
+.minha-foto {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.navegacao-site {
+	width: 15%;
+	position: relative;
+	top: 310px;
+}
+

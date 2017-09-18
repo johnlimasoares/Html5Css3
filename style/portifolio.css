@@ -1,0 +1,17 @@
+.figure{
+    float: left;
+    margin: 3px;
+    border: 10px;
+    border-style: solid;
+    border-color: black;
+    padding: 5px;
+}
+
+figcaption{
+    width: 320px;
+    line-height: 1;
+}
+
+h4{
+    font-size: 20px;
+}
