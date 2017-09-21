@@ -1,19 +1,12 @@
+/*rem é uma medida baseada no tamanho da font do navegador*/
+/*em é uma medida baseada no tamanho da font do elemento*/
+/*1ch = largura de um caracter 0 da fonte usada*/
+
 body {
     font-family: "Crimson Text", "Times New Roman", serif;
     background-color: #F2FFFC;
     font-size: 120%;
     line-height: 1.5;
-}
-
-h1,
-h2,
-.subtitulo-principal {
-    font-family: "Open Sans Condensed", "Arial", sans-serif;
-}
-
-h1 {
-    text-transform: uppercase;
-    font-size: 3em;
 }
 
 .titulo-principal {
@@ -24,6 +17,17 @@ h1 {
     border-bottom: .5rem solid #000;
 }
 
+h1,h2,.subtitulo-principal {
+    font-family: "Open Sans Condensed", "Arial", sans-serif;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 3em;
+}
+
+
+/*clear:both informa que o elemento não podem ter nenhum float a embaixo dele*/
 .subtitulo-texto {
     font-size: 1.5em;
     clear: both;
@@ -83,10 +87,14 @@ em {
     font-style: italic;
 }
 
+/*display permite controlar um comportamento padrao da tag. empilhado ou um do lado do outro*/
+/*inline-block é uma nova propriedade do display inline que permite controlar o height e weight da tag*/
 .icones-redes-sociais li {
     display: inline-block;
 }
 
+/*Definindo icones atraves do css com a técnica 'image replacement'*/
+/*text-indent empurra o texto para o lado da tela até ele sumir*/
 .icones-redes-sociais a {
     width: 40px;
     height: 40px;
@@ -112,6 +120,7 @@ main {
     padding-bottom: 4em;
 }
 
+/*box-sizing define oque vai ser considerado ao medir o tamanho do elemento. No caso o border-box considerará tbm as bordas do elemento*/
 .minha-foto,
 .navegacao-site {
     border-left: .5em solid black;
