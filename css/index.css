@@ -98,6 +98,13 @@ li p{
     background-color: #3C1D3D;
     border-top: .5em solid #000;
     border-bottom: .5em solid #000;
+    background-image: linear-gradient(135deg,transparent, transparent 14px, rgba(0,0,0,.1) 14px,rgba(0,0,0,.1) 15px,transparent 15px,transparent);
+    background-size: 20px 20px;
+    background-attachment: fixed;/*mantem o efeito parado enquanto a pagina rola*/
+/*
+135deg = inclinação de 135 graus. Começa com uma cor transparent e vai até 14px como transparent mudando para semi-transparent "rgba(0,0,0,.1)" com opacidade de .1, vai até 15 px dessa forma e depois volta para transparent
+    
+    */
 }
 
 .trabalhos h2 {
